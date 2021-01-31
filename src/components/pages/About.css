@@ -34,9 +34,9 @@
     filter: blur(0px);
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
+    transform: scale(1.9);
 }
 .media-links > a > img:hover {
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
+    transform: scale(2) rotate(.95turn);
     cursor: pointer;
 }

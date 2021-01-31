@@ -14,17 +14,17 @@ class About extends Component {
     return (
       <div className="about">
         <p className="blurb">
-          I'm an undergrad student from the PNW studying CS and BCS.
+          I'm an undergrad student from the Pacific Northwest studying Computer Science and Cognition in Boston.
         </p>
         <p className="blurb">
-          I find myself fascinated at the intersection between machine and human
-          intelligence and how we can use insights from the study of
-          neuroscience to design more effective and human empathetic software.
+          I'm fascinated with the intersection where technology meets human
+          intelligence. I feel that insights about
+          human behavior can help us design more impactful software, while always keeping the human being behind the computer screen in mind.
         </p>
-        <p className="blurb">
+        {/* <p className="blurb">
           I also play the oboe and saxophone, and occasionally do musical
           things!
-        </p>
+        </p> */}
 
         <div className="media-links">
           <a href="mailto:cristafalk@gmail.com"><img src={email}/></a>

@@ -1,29 +1,89 @@
 .academics {
-    
-    background-color: var(--mint);
-    color: var(--rose);
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: fit-content;
-    overflow-y: auto;
-    width: 100vw;
-    font-weight: lighter;
-    font-size: smaller;
+  background-color: var(--mint);
+  color: var(--rose);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: fit-content;
+  overflow-y: auto;
+  width: 100vw;
+  font-weight: lighter;
+  font-size: smaller;
 }
 
 .academics > p {
+  margin-left: 90px;
+  padding-top: 20px;
+}
+
+.academics > h4 {
   margin-left: 60px;
   padding-top: 20px;
 }
 
 .academics > p > p {
   margin-left: 60px;
+  margin-top: 5px;
 }
 
-.academics a {
+.modal-link {
+  color: var(--rose);
+  text-decoration: none;
+  font-weight: bold;
+  display: inline;
+}
+.modal-link:hover {
   color: var(--rose);
   text-decoration: underline;
   font-weight: bold;
+  cursor: pointer;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  padding: 10px 20px;
+  margin: 0;
+  text-decoration: none;
+  background: var(--rose);
+  color: var(--mint);
+  font-size: 1rem;
+  border-radius: 10%;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+  background: var(--violet);
+}
+
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+button:active {
+  transform: scale(0.99);
+}
+
+.course-header {
+    font-family: "Inconsolata", monospace;
+    color: var(--rose);
+    font-size: large;
+}
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    font-family: "Inconsolata", monospace;
+    color: var(--mint);
+}
+
+.courses > li:hover {
+    color: var(--rose);
 }
