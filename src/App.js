@@ -9,23 +9,36 @@ import Blog from "./components/pages/Blog.js";
 import Projects from "./components/pages/Projects.js";
 import { Component } from "react";
 import Academics from "./components/pages/Academics";
+import axios from "axios";
 
 class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      itHeader: "Welcome :)",
-      regHeader: "Use the links in the rose colored tab to start exploring!",
+      itHeader: "While you're here, did you know?",
+      regHeader: "",
       currentPage: "",
+      showPage: false,
+      funFact: "",
     };
   }
 
+  componentDidMount() {
+    axios
+      .get(`https://uselessfacts.jsph.pl/random.json?language=en`)
+      .then((res) => {
+        const quote = res.data.text;
+        console.log(quote);
+        this.setState({ funFact: quote });
+      });
+  }
   setAbout = () => {
     this.setState({
-      itHeader: "Hi!",
+      itHeader: "Welcome!",
       regHeader: "My name is Crista.",
       currentPage: "About",
+      showPage: true,
     });
   };
 
@@ -34,6 +47,7 @@ class App extends Component {
       itHeader: "Blog",
       regHeader: "",
       currentPage: "Blog",
+      showPage: true,
     });
   };
 
@@ -42,6 +56,7 @@ class App extends Component {
       itHeader: "Academics",
       regHeader: "",
       currentPage: "Academics",
+      showPage: true,
     });
   };
 
@@ -50,6 +65,7 @@ class App extends Component {
       itHeader: "Projects",
       regHeader: "",
       currentPage: "Projects",
+      showPage: true,
     });
   };
 
@@ -124,16 +140,32 @@ class App extends Component {
               <Row>
                 <Switch>
                   <Route exact path="/">
-                    <About></About>
+                    {this.state.showPage ? (
+                      <About></About>
+                    ) : (
+                      <div className="fact">{this.state.funFact}</div>
+                    )}
                   </Route>
                   <Route path="/blog">
-                    <Blog></Blog>
+                    {this.state.showPage ? (
+                      <Blog></Blog>
+                    ) : (
+                      <div className="fact">{this.state.funFact}</div>
+                    )}
                   </Route>
                   <Route path="/projects">
-                    <Projects></Projects>
+                    {this.state.showPage ? (
+                      <Projects></Projects>
+                    ) : (
+                      <div className="fact">{this.state.funFact}</div>
+                    )}
                   </Route>
                   <Route path="/academics">
-                    <Academics></Academics>
+                    {this.state.showPage ? (
+                      <Academics></Academics>
+                    ) : (
+                      <div className="fact">{this.state.funFact}</div>
+                    )}
                   </Route>
                 </Switch>
               </Row>

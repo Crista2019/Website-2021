@@ -123,6 +123,14 @@ h1 {
   padding: 10px;
 }
 
+.fact {
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: "Inconsolata", monospace;
+  color: var(--rose);
+  padding: 10px;
+}
+
 hr {
   width: 90%;
   margin-left: auto;

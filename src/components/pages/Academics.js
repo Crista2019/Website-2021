@@ -23,7 +23,7 @@ class Academics extends Component {
           </strong>
         </p>
         <p>- Computer + Brain & Cognitive Sciences</p>
-        <p>- Relevant Coursework</p>
+        <p>- <a href="">Relevant Coursework</a></p>
         <Modal show={this.showModal}>
           <Modal.Header>Hi</Modal.Header>
           <Modal.Body>asdfasdf</Modal.Body>
