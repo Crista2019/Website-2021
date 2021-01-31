@@ -1,0 +1,29 @@
+.academics {
+    
+    background-color: var(--mint);
+    color: var(--rose);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: fit-content;
+    overflow-y: auto;
+    width: 100vw;
+    font-weight: lighter;
+    font-size: smaller;
+}
+
+.academics > p {
+  margin-left: 60px;
+  padding-top: 20px;
+}
+
+.academics > p > p {
+  margin-left: 60px;
+}
+
+.academics a {
+  color: var(--rose);
+  text-decoration: underline;
+  font-weight: bold;
+}

@@ -7,8 +7,8 @@ import { Link, Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import About from "./components/pages/About.js";
 import Blog from "./components/pages/Blog.js";
 import Projects from "./components/pages/Projects.js";
-import Header from "./components/pages/Header.js";
 import { Component } from "react";
+import Academics from "./components/pages/Academics";
 
 class App extends Component {
   constructor(props) {
@@ -131,6 +131,9 @@ class App extends Component {
                   </Route>
                   <Route path="/projects">
                     <Projects></Projects>
+                  </Route>
+                  <Route path="/academics">
+                    <Academics></Academics>
                   </Route>
                 </Switch>
               </Row>
