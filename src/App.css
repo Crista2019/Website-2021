@@ -1,0 +1,40 @@
+.nav {
+  background-color: var(--rose);
+  margin-left: -20px;
+  padding: 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: fit-content;
+  height: 100vh;
+  justify-content: space-evenly;
+}
+
+.pic {
+  width: 70%;
+  border-radius: 100%;
+  box-shadow: -2px 10px 10px -6px var(--darkgrey);
+}
+
+ul {
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  list-style: none;
+}
+
+li {
+    margin-top: 10px;
+}
+
+.link-item {
+  font-family: "Inconsolata", monospace;
+  font-size: 36px;
+  color: var(--violet);
+}
+
+.link-item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--violet);
+}
