@@ -13,11 +13,6 @@ class About extends Component {
   render() {
     return (
       <div className="about">
-        <h1>
-          <i>Hi!</i>
-        </h1>
-        <h1>I'm Crista.</h1>
-        <hr></hr>
         <p className="blurb">
           I'm an undergrad student from the PNW studying CS and BCS.
         </p>

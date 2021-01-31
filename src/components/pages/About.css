@@ -2,35 +2,22 @@
   background-color: var(--mint);
   font-family: "PT Serif", serif;
   color: var(--rose);
-  padding: 50px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 80vh;
+  height: auto;
   overflow-y: auto;
-}
-
-h1 {
-  /* font-size: 80px; */
-  margin-left: 30px;
-}
-
-hr {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--rose);
-  /* border: 2px solid var(--rose); */
 }
 
 .blurb {
     font-family: 'Inconsolata', monospace;
     /* font-size: 25px; */
     font-weight: lighter;
-    margin-top: 20px;
     resize: vertical;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 20px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
 }
 
 .media-links {
@@ -41,7 +28,7 @@ hr {
 }
 
 .media-links > a >img {
-    height: 30px;
+    height: 20px;
     margin: 20px;
     -webkit-filter: blur(0px);
     filter: blur(0px);
