@@ -13,7 +13,7 @@ function App() {
     <Container className="fill" fluid>
       <Router>
         <Row>
-          <Col xs={3}>
+          <Col>
             <div className="nav">
               <img className="pic" src={profile} alt="Me!" />
               <ul>

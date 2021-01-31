@@ -6,7 +6,7 @@
         padding: 10%;
         display: flex;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
         width: fit-content;
         width: fit-content;
         height: 100vh;
@@ -61,7 +61,7 @@
         width: 102vw;
         height: fit-content;
         justify-content:space-evenly;
-        position: relative;
+        /* position: relative; */
         z-index: 1;
       }
 
@@ -96,6 +96,7 @@
       .rest {
         width: 100vw;
         /* margin-left: -10px; */
+        font-size: 10px;
     }    
 }
 
