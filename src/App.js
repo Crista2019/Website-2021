@@ -16,7 +16,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      itHeader: "While you're here, did you know?",
+      itHeader: "",
       regHeader: "",
       currentPage: "",
       showPage: false,
@@ -26,11 +26,14 @@ class App extends Component {
 
   componentDidMount() {
     axios
-      .get(`https://uselessfacts.jsph.pl/random.json?language=en`)
+      .get(`https://api.quotable.io/random?tags=famous-quotes`)
       .then((res) => {
-        const quote = res.data.text;
-        console.log(quote);
-        this.setState({ funFact: quote });
+        const quote = res.data.content;
+        const author = res.data.author;
+        this.setState({
+          funFact: '"' + quote + '"',
+          itHeader: "Some words of advice from " + author + ":",
+        });
       });
   }
   setAbout = () => {

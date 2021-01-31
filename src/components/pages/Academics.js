@@ -30,25 +30,28 @@ class Academics extends Component {
             </a>
           </strong>
         </h4>
-        <p>- Computer Science + Brain & Cognitive Science</p>
+        <p>- Computer Science + Brain & Cognitive Sciences</p>
         <p>- Relevant <div onClick={this.toggleModal} className="modal-link">Coursework</div></p>
         <Modal show={this.state.showModal}>
-          <Modal.Header><div className="course-header">Some of my favorite areas of study in college!</div></Modal.Header>
+          <Modal.Header><div className="course-header">Some of my favorite areas of study in college:</div></Modal.Header>
           <Modal.Body>
                   <ul className="courses">
                     <li>Solid-State Chemistry</li>
                     <li>Multivariable Calculus I and II</li>
                     <li>Physics: Classical Mechanics and Electromagnetism</li>
                     <li>Problems of Philosophy</li>
+                    {/* <hr></hr> */}
                     <li>Intros to Computer Science and Data Science</li>
                     <li>Mathematics for Computer Science</li>
                     <li>Harmony and Counterpoint</li>
+                    {/* <hr></hr> */}
                     <li>ConLangs: How to Construct a Language</li>
                     <li>Fundamentals of Programming</li>
                     <li>Algorithms</li>
                     <li>Electronic Music Composition</li>
                     <li>Web Lab: A Web Programming Class and Competition</li>
                     <li>MIT Wind Ensemble</li>
+                    {/* <hr></hr> */}
                     <li>Undergrad research in the Digital Humanities Lab and the Synthetic Neurobiology Group@MIT</li>
                   </ul>
           </Modal.Body>
