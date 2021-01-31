@@ -32,10 +32,10 @@ class About extends Component {
         </p>
 
         <div className="media-links">
-          <a href="google.com"><img src={email}/></a>
-          <a href="google.com"><img src={linkedin}/></a>
-          <a href="google.com"><img src={github}/></a>
-          <a href="google.com"><img src={resume}/></a>
+          <a href="mailto:cristafalk@gmail.com"><img src={email}/></a>
+          <a href="https://www.linkedin.com/in/cristafalk/"><img src={linkedin}/></a>
+          <a href="https://github.com/Crista2019/"><img src={github}/></a>
+          <a href="https://drive.google.com/drive/folders/1GgPtZOy7xKbn5IcKyLcNuV9yJYsTNPOY?usp=sharing"><img src={resume}/></a>
         </div>
       </div>
     );
