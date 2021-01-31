@@ -32,7 +32,7 @@ function App() {
               </ul>
             </div>
           </Col>
-          <Col>
+          <Col className="rest">
             <Switch>
               <Route exact path="/">
                 <About></About>
