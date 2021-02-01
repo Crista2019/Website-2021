@@ -11,7 +11,7 @@ class Blog extends Component {
     return (
       <>
         <p>Nothing here yet!</p>
-        <MouseParticles g={1} color="random" cull="" />
+        <MouseParticles g={1} color="gray" cull="nav" />
       </>
     );
   }
