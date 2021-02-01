@@ -12,6 +12,7 @@
     height: 100vh;
     justify-content: space-evenly;
     align-items: center;
+    box-shadow: 8px 0px 10px -6px var(--darkgrey);
   }
 
   .pic {
@@ -33,6 +34,7 @@
 
   .link-item {
     font-family: "Inconsolata", monospace;
+    /* font-family: "PT Serif", serif; */
     font-size: 36px;
     color: var(--violet);
   }
@@ -42,13 +44,14 @@
     cursor: pointer;
     color: var(--violet);
     padding-left: 10px;
+    font-weight: bold;
   }
 
   .link-item:active {
     text-decoration: underline;
     cursor: pointer;
     color: var(--violet);
-    font-weight: bold;
+    
   }
   .rest {
     font-size: 25px;
@@ -65,15 +68,18 @@
     flex-direction: row;
     width: 102vw;
     height: fit-content;
-    justify-content: space-evenly;
+    justify-content:flex-start;
+    align-content: center;
     /* position: relative; */
     z-index: 1;
+    box-shadow: 8px 2px 10px -2px var(--darkgrey);
   }
 
   .pic {
     width: 10%;
     margin: 10px;
     border-radius: 100%;
+    margin-left: 5%;
     box-shadow: -2px 10px 10px -6px var(--darkgrey);
   }
 
