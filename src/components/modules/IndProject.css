@@ -23,12 +23,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid var(--rose);
+  /* border: 1px solid rgba(95, 122, 115, 0.2);; */
   margin: 50px;
   padding: 50px;
   height: 80%;
   text-align: center;
-  background-color: rgba(155, 106, 108, 0.4);
+  background-color: rgba(95, 122, 115, 0.15);
+  /* background-color: rgba(155, 106, 108, 0.4); */
 }
 
 .single-project div {
@@ -36,7 +37,8 @@ body {
 }
 
 .single-project:hover {
-  background-color: rgba(155, 106, 108, 0.5);
+  /* background-color: rgba(95, 122, 115, 0.1); */
+  background-color: rgba(95, 122, 115, 0.05);
   cursor: default;
 }
 

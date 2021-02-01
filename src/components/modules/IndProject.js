@@ -19,7 +19,7 @@ class IndProject extends Component {
               {/* <div className="proj-img"></div> */}
               <div className="proj-description">
                 <p>{project.description}</p>
-                <a href={project.link}>Check out the Project!</a>
+                <a href={project.link}>Check out the project!</a>
               </div>
             </div>
           ))}
