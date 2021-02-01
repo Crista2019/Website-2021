@@ -20,8 +20,8 @@ class About extends Component {
           Science and Cognition in Boston.
         </p>
         <p className="blurb">
-          I love the intersection where technology meets human intelligence. I
-          strongly believe that insights about human behavior can help us design
+          I care about the intersection where technology meets human intelligence. I
+          strongly believe that insight on human behavior can help us design
           more impactful software, while always keeping the human being behind
           the computer screen in mind.
         </p>
