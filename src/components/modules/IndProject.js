@@ -13,9 +13,9 @@ class IndProject extends Component {
           {this.props.projects.map((project) => (
             <div class="single-project" key={project.id}>
               <p>
-                <strong>{project.title.toUpperCase()}</strong>{" "}
+                <u><strong>{project.title.toUpperCase()}</strong>{" "}</u>
               </p>
-              <p>{project.date}</p>
+              <h5 className="proj-date">{project.date}</h5>
               {/* <div className="proj-img"></div> */}
               <div className="proj-description">
                 <p>{project.description}</p>
