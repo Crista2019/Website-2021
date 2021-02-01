@@ -4,10 +4,10 @@
   --mint: #D7DBDA;
   --violet: #370031;
   --darkgrey: #333333;
-
+  --darkmint: #B0BDBA;
 }
 
-body {
+html {
   /* font-family: 'Inconsolata', monospace; */
   font-family: 'PT Serif', serif;
   color: var(--rose);
