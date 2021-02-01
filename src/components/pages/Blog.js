@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../../App.css";
 import "./Blog.css";
-// import MouseParticles from "react-mouse-particles";
+import MouseParticles from "react-mouse-particles";
 
 class Blog extends Component {
   constructor(props) {
@@ -10,8 +10,8 @@ class Blog extends Component {
   render() {
     return (
       <>
-        <h3>Test</h3>
-        {/* <MouseParticles g={1} color="random" cull="" /> */}
+        <p>Nothing here yet!</p>
+        <MouseParticles g={1} color="random" cull="" />
       </>
     );
   }
