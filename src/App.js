@@ -3,7 +3,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Col, Row, Container } from "react-bootstrap";
 import "./index.css";
 import profile from "./resources/profile.jpg";
-import { Link, Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import {
+  Link,
+  Route,
+  BrowserRouter as Router,
+  Switch,
+  Redirect,
+} from "react-router-dom";
 import About from "./components/pages/About.js";
 import Blog from "./components/pages/Blog.js";
 import Projects from "./components/pages/Projects.js";
@@ -170,8 +176,9 @@ class App extends Component {
                       <div className="fact">{this.state.funFact}</div>
                     )}
                   </Route>
+                  {/* because the routing happens on the client end, refresh causes a 404 error to any non-home page */}
                   <Route path="*">
-                    <div className="fact">{this.state.funFact}</div>
+                    <Redirect to="/" />
                   </Route>
                 </Switch>
               </Row>
