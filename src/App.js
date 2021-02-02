@@ -94,7 +94,7 @@ class App extends Component {
                     <Link
                       onClick={this.setBlog}
                       className="link-item"
-                      to="/blog"
+                      to="blog"
                     >
                       {this.state.currentPage == "Blog" ? (
                         <strong>Blog</strong>
@@ -107,7 +107,7 @@ class App extends Component {
                     <Link
                       onClick={this.setAcademics}
                       className="link-item"
-                      to="/academics"
+                      to="academics"
                     >
                       {this.state.currentPage == "Academics" ? (
                         <strong>Academics</strong>
@@ -120,7 +120,7 @@ class App extends Component {
                     <Link
                       onClick={this.setProjects}
                       className="link-item"
-                      to="/projects"
+                      to="projects"
                     >
                       {this.state.currentPage == "Projects" ? (
                         <strong>Projects</strong>
@@ -169,6 +169,9 @@ class App extends Component {
                     ) : (
                       <div className="fact">{this.state.funFact}</div>
                     )}
+                  </Route>
+                  <Route path="*">
+                    <div className="fact">{this.state.funFact}</div>
                   </Route>
                 </Switch>
               </Row>

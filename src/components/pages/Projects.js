@@ -15,7 +15,7 @@ class Projects extends Component {
         title: "Intervals",
         date: "1/31/2021",
         image: "",
-        description: "Intervals was my final submission project for Web.Lab 2021, a web-design course and competion held over MIT's month-long Independent Activities Period. Intervals is a web-app designed to make microscheduling your life's routines simple and repeatable to keep you on track, whether you're working out, practicing piano, or studying for a test. Created using ReactTS, Node, Electron, and MongoDB.",
+        description: "Intervals was my submission project for Web.Lab 2021, a web-design course and competion held over MIT's month-long Independent Activities Period. Intervals is a web-app designed to make microscheduling your life's routines simple and repeatable to keep you on track, whether you're working out, practicing piano, or studying for a test. Created using ReactTS, Node, Electron, and MongoDB.",
         link: "https://createintervals.herokuapp.com/",
       },
       {

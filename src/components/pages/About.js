@@ -21,9 +21,9 @@ class About extends Component {
         </p>
         <p className="blurb">
           I care about the intersection where technology meets human intelligence. I
-          strongly believe that insight on human behavior can help us design
-          more impactful software, while always keeping the human being behind
-          the computer screen in mind.
+         believe that insight on human behavior can help us design
+          more impactful software, while prioritizing the well-being of the person behind
+          the computer screen.
         </p>
         {/* <p className="blurb">
           I also play the oboe and saxophone, and occasionally do musical
