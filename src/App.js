@@ -6,7 +6,7 @@ import profile from "./resources/profile.jpg";
 import {
   Link,
   Route,
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Redirect,
 } from "react-router-dom";
@@ -155,7 +155,7 @@ class App extends Component {
                       <div className="fact">{this.state.funFact}</div>
                     )}
                   </Route>
-                  <Route path="/blog">
+                  <Route exact path="/blog">
                     {this.state.showPage ? (
                       <Blog></Blog>
                     ) : (
