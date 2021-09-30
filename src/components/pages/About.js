@@ -17,7 +17,7 @@ class About extends Component {
       <div className="about">
         <p className="blurb">
           I'm an undergrad student from the Pacific Northwest studying Computer
-          Science and Cognition in Boston.
+          Science and Cognition in Boston. 
         </p>
         <p className="blurb">
           I care about the intersection where technology meets human intelligence. I

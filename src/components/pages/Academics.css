@@ -82,8 +82,13 @@ button:active {
     flex-direction: column;
     font-family: "Inconsolata", monospace;
     color: var(--mint);
+    cursor:default;
 }
 
 .courses > li:hover {
     color: var(--rose);
+}
+
+.courses > h4 {
+    color: var(--lightgrey);
 }

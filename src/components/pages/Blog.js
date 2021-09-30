@@ -9,7 +9,10 @@ class Blog extends Component {
     super(props);
   }
   render() {
-    const blogs = [{ id: 0, title: "First Blog Post", date: "2/1/2021", content: ["This is my first blog post yay.", "More to come!"] }];
+    const blogs = [
+      { id: 0, title: "First Blog Post", date: "2/1/2021", content: ["This is my first blog post yay.", "More to come!"] },
+      // { id: 1, title: "Second Blog Post", date: "9/30/2021", content: ["There was not more to come..."] },
+    ];
 
     return (
       <>
